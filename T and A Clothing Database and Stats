@@ -1,0 +1,25 @@
+--Create a store database with 15 items and at least 5 columns
+
+CREATE TABLE T_and_A (id INTEGER PRIMARY KEY, name TEXT, color TEXT, aisle INTEGER, price INTEGER);
+
+INSERT INTO T_and_A VALUES (001, "crop_top", "red", 3, 19);
+INSERT INTO T_and_A VALUES (002, "tank_top", "orange", 2, 23);
+INSERT INTO T_and_A VALUES (003, "t_shirt", "yellow", 4, 27);
+INSERT INTO T_and_A VALUES (004, "baseball_tee", "black", 6, 33);
+INSERT INTO T_and_A VALUES (005, "spaghetti-strap", "beige", 2, 23);
+INSERT INTO T_and_A VALUES (006, "tube_top", "green", 2, 25);
+INSERT INTO T_and_A VALUES (007, "long_sleeved_top", "blue", 6, 37);
+INSERT INTO T_and_A VALUES (008, "leggings", "black", 7, 31);
+INSERT INTO T_and_A VALUES (009, "leggings", "navy", 7, 31);
+INSERT INTO T_and_A VALUES (010, "leggings", "brown", 7, 31);
+INSERT INTO T_and_A VALUES (011, "sweatshirt", "red", 5, 45);
+INSERT INTO T_and_A VALUES (012, "sweatshirt", "black", 5, 45);
+INSERT INTO T_and_A VALUES (013, "sweatshirt", "multi", 5, 46);
+INSERT INTO T_and_A VALUES (014, "crop_top", "black", 3, 19);
+INSERT INTO T_and_A VALUES (015, "tank_top", "navy", 2, 23);
+
+SELECT * FROM T_and_A;
+
+--display the database along with at least one attribute ordered by price
+
+SELECT name, color, price FROM T_and_A ORDER BY price;
