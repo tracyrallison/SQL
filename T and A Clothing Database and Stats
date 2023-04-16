@@ -1,4 +1,4 @@
---Create a store database with 15 items and at least 5 columns
+--Directive:create a store database with 15 items and at least 5 columns
 
 CREATE TABLE T_and_A (id INTEGER PRIMARY KEY, name TEXT, color TEXT, aisle INTEGER, price INTEGER);
 
@@ -20,6 +20,6 @@ INSERT INTO T_and_A VALUES (015, "tank_top", "navy", 2, 23);
 
 SELECT * FROM T_and_A;
 
---display the database along with at least one attribute ordered by price
+--Directive:display the database along with at least one attribute ordered by price
 
 SELECT name, color, price FROM T_and_A ORDER BY price;
