@@ -1,3 +1,5 @@
+--Directive: Use data set and create advanced SELECT queries to discover things about the data. 
+
 CREATE TABLE sales(
   ID INTEGER  NOT NULL PRIMARY KEY
 , transaction_date TEXT
@@ -117,9 +119,11 @@ INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,co
 
 SELECT * FROM sales;
 
+--Directive: What is the minimum price, average price, maximum price, and sum of all prices in the sales table?
 
 SELECT MIN(price), AVG(price) , MAX(price), SUM(price) FROM sales;
 
+--Directive: What is the quantity of which products having an individual price per item of more than $1200?
 
 SELECT COUNT(product) AS quantity, product, SUM(price) 
 FROM sales
@@ -127,17 +131,20 @@ GROUP BY product
 HAVING price > 1200
 ORDER BY SUM(price);
 
+--Directive: What is the quantity of sales per payment type?
 
 SELECT COUNT(payment_type), payment_type
 FROM sales
 GROUP BY payment_type;
 
+--Directive: What is the quantity of sales per country?
 
 SELECT COUNT(country), country
 FROM sales
 GROUP BY country
 ORDER BY country;
 
+--Directive: What is the quantity of sales per continent?
 
 SELECT COUNT(country) AS number_of_orders,
     CASE
@@ -150,6 +157,7 @@ SELECT COUNT(country) AS number_of_orders,
 FROM sales
 GROUP BY continent;
 
+--Directive: What is the sum of sales per payment type and continent?
 
 SELECT SUM(price), payment_type,
     CASE
