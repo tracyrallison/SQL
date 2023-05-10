@@ -20,6 +20,6 @@ INSERT INTO T_and_A VALUES (015, "tank_top", "navy", 2, 23);
 
 SELECT * FROM T_and_A;
 
---Directive:display the database along with at least one attribute ordered by price
+--Directive: display the database along with at least one attribute ordered by price
 
 SELECT name, color, price FROM T_and_A ORDER BY price;
