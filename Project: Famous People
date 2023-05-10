@@ -1,0 +1,124 @@
+CREATE TABLE famous_actors_info
+    (id INTEGER PRIMARY KEY AUTOINCREMENT,
+    full_name TEXT,
+    year_born INTEGER, 
+    city_born TEXT,
+    state_born TEXT,
+    year_died INTEGER);
+    
+INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Cate Blanchett", 1969, "Ivanhoe", "Australia", NULL);
+
+INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Brad Pitt", 1963, "Shawnee", "Oklahoma", NULL);
+
+INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Gwyneth Paltrow", 1972, "Los Angeles", "California", NULL);
+
+INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Margot Robbie", 1990, "Dalby", "Australia", NULL);
+
+INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Leonardo DiCaprio", 1974, "Los Angeles", "California", NULL);
+
+INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Uma Thurman", 1970, "Boston", "Massachusetts", NULL);
+
+INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Harrison Ford", 1942, "Chicago", "Illinois", NULL);
+
+INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Carrie Fisher", 1956, "Burbank", "California", 2016);
+
+INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Alec Guiness", 1913, "London", "United Kingdom", 2000);
+
+INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Mark Hamill", 1951, "Oakland", "California", NULL);
+
+INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Jack Nicholson", 1937, "Neptune City", "New Jersey", NULL);
+
+INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Mark Wahlberg", 1971, "Boston", "Massachusetts", NULL);
+
+INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Matt Damon", 1970, "Cambridge", "Massachusetts", NULL);
+
+INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Matthew McConaughey", 1969, "Uvalde", "Texas", NULL);
+
+
+CREATE TABLE famous_actors_movies
+    (actor_id INTEGER,
+    full_name TEXT,
+    movie TEXT, 
+    director TEXT,
+    release_year INTEGER);
+
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (1, "The Curious Case of Benjamin Button", "David Fincher", 2008);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (2, "The Curious Case of Benjamin Button", "David Fincher", 2008);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (3, "Se7en", "David Fincher", 1995);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (2, "Se7en", "David Fincher", 1995);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (2, "Once Upon a Time in Hollywood", "Quentin Tarantino", 2019);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (4, "Once Upon a Time in Hollywood", "Quentin Tarantino", 2019);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (5, "Once Upon a Time in Hollywood", "Quentin Tarantino", 2019);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (6, "Pulp Fiction", "Quentin Tarantino", 1994);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (7, "Star Wars: A New Hope", "George Lucas", 1977);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (8, "Star Wars: A New Hope", "George Lucas", 1977);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (9, "Star Wars: A New Hope", "George Lucas", 1977);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (10, "Star Wars: A New Hope", "George Lucas", 1977);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (11, "The Departed", "Martin Scorsese", 2006);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (12, "The Departed", "Martin Scorsese", 2006);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (13, "The Departed", "Martin Scorsese", 2006);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (5, "The Departed", "Martin Scorsese", 2006);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (5, "The Wolf of Wall Street", "Martin Scorsese", 2013);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (4, "The Wolf of Wall Street", "Martin Scorsese", 2013);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (14, "The Wolf of Wall Street", "Martin Scorsese", 2013);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (14, "Interstellar", "Christopher Nolan", 2014);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (13, "Interstellar", "Christopher Nolan", 2014);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (13, "Contagion", "Steven Soderbergh", 2011);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (3, "Contagion", "Steven Soderbergh", 2011);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (2, "Ocean's 11", "Steven Soderbergh", 2001);
+
+INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (13, "Ocean's 11", "Steven Soderbergh", 2001);
+
+/* Select only names of actors from list as well as the movies they star in ordered by movie title then actor's name */
+
+SELECT famous_actors_movies.movie, famous_actors_info.full_name
+FROM famous_actors_info
+    JOIN famous_actors_movies
+    ON famous_actors_info.id = famous_actors_movies.actor_id
+    ORDER BY famous_actors_movies.movie, famous_actors_info.full_name;
+    
+/* Select all movies from list starring Brad Pitt ordered by release year */
+
+SELECT famous_actors_movies.movie, famous_actors_info.full_name
+FROM famous_actors_info
+    JOIN famous_actors_movies
+    ON famous_actors_info.id = famous_actors_movies.actor_id
+    WHERE famous_actors_info.full_name = "Brad Pitt"
+    ORDER BY famous_actors_movies.release_year;
+
+/* Select only movies directed by Quentin Tarantino grouped by movie title and then ordered by release year */
+
+SELECT a.movie, b.director
+    FROM famous_actors_movies a
+    JOIN famous_actors_movies b
+    ON a.director = b.director
+    WHERE a.director = "Quentin Tarantino"
+    GROUP BY a.movie
+    ORDER BY a.release_year;
+
+/* Select only movies starring both Leonardo DiCaprio and Margot Robbie */
+
