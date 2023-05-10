@@ -93,7 +93,7 @@ INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUE
 
 INSERT INTO famous_actors_movies (actor_id, movie, director, release_year) VALUES (13, "Ocean's 11", "Steven Soderbergh", 2001);
 
-/* Select only names of actors from list as well as the movies they star in ordered by movie title then actor's name */
+--Directive: Select only names of actors from list as well as the movies they star in ordered by movie title then actor's name
 
 SELECT famous_actors_movies.movie, famous_actors_info.full_name
 FROM famous_actors_info
@@ -101,7 +101,7 @@ FROM famous_actors_info
     ON famous_actors_info.id = famous_actors_movies.actor_id
     ORDER BY famous_actors_movies.movie, famous_actors_info.full_name;
     
-/* Select all movies from list starring Brad Pitt ordered by release year */
+--Directive: Select all movies from list starring Brad Pitt ordered by release year
 
 SELECT famous_actors_movies.movie, famous_actors_info.full_name
 FROM famous_actors_info
@@ -110,7 +110,7 @@ FROM famous_actors_info
     WHERE famous_actors_info.full_name = "Brad Pitt"
     ORDER BY famous_actors_movies.release_year;
 
-/* Select only movies directed by Quentin Tarantino grouped by movie title and then ordered by release year */
+--Directive: Select only movies directed by Quentin Tarantino grouped by movie title and then ordered by release year
 
 SELECT a.movie, b.director
     FROM famous_actors_movies a
@@ -120,7 +120,7 @@ SELECT a.movie, b.director
     GROUP BY a.movie
     ORDER BY a.release_year;
 
-/* Select only movies starring both Leonardo DiCaprio and Margot Robbie */
+--Directive: Select only movies starring both Leonardo DiCaprio and Margot Robbie
 
 SELECT a.movie
     FROM famous_actors_movies a
