@@ -22,7 +22,7 @@ INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, yea
 
 INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Carrie Fisher", 1956, "Burbank", "California", 2016);
 
-INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Alec Guiness", 1913, "London", "United Kingdom", 2000);
+INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Alec Guinness", 1913, "London", "United Kingdom", 2000);
 
 INSERT INTO famous_actors_info (full_name, year_born, city_born, state_born, year_died) VALUES ("Mark Hamill", 1951, "Oakland", "California", NULL);
 
