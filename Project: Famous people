@@ -122,3 +122,8 @@ SELECT a.movie, b.director
 
 /* Select only movies starring both Leonardo DiCaprio and Margot Robbie */
 
+SELECT a.movie
+    FROM famous_actors_movies a
+    JOIN famous_actors_movies b
+    ON a.movie = b.movie
+    WHERE a.actor_id = 4 AND b.actor_id = 5;
